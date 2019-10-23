@@ -46,12 +46,10 @@
 					<NodeIndex>2</NodeIndex>
 					<Component>
 						<Version>1</Version>
-						<ElapsedTime>15</ElapsedTime>
-						<StartTime>2019.10.23 17:29:36</StartTime>
-						<StopTime>2019.10.23 17:29:36</StopTime>
+						<StartTime>2019.10.23 15:52:47</StartTime>
+						<StopTime>2019.10.23 15:52:47</StopTime>
 						<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
-						<StoppedByUser>1</StoppedByUser>
-						<FileName>Credit.txt</FileName>
+						<FileName>C:\Users\Max\Desktop\шарага\НАСБТ\ПР1_Импорт_экспот\Credit.txt</FileName>
 						<CharSet>chrANSI</CharSet>
 						<FixedFormat>0</FixedFormat>
 						<DecimalPoint>,</DecimalPoint>
@@ -634,9 +632,9 @@
 							<FilterColumns/>
 							<VirtualDataSet>
 								<SortComponent>
-									<StartTime>2019.10.23 17:29:40</StartTime>
-									<StopTime>2019.10.23 17:29:40</StopTime>
-									<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+									<StartTime>2019.09.21 19:13:48</StartTime>
+									<StopTime>2019.09.21 19:13:48</StopTime>
+									<ElapsedTimeFmt>00:00:00.000</ElapsedTimeFmt>
 									<Count>1</Count>
 									<I_0>
 										<ID>1</ID>
@@ -1127,6 +1125,8 @@
 							<LineWidth>2</LineWidth>
 							<XAxisLabelsFieldName>COL1</XAxisLabelsFieldName>
 							<XAxisValuesFieldName>COL1</XAxisValuesFieldName>
+							<LeftAxis/>
+							<BottomAxis/>
 							<DiagramColumns>
 								<Columns>
 									<Count>15</Count>
@@ -1245,6 +1245,8 @@
 							<View3D>1</View3D>
 							<Axis>1</Axis>
 							<LegendAlignment>laRight</LegendAlignment>
+							<LeftAxis/>
+							<BottomAxis/>
 							<HistogramColumns>
 								<Columns>
 									<Count>15</Count>
@@ -1460,57 +1462,18 @@
 							<DisplayName>Экспорт Text (C:\Users\Max\Desktop\шарага\НАСБТ\Готовые лабы\1\Export.txt)</DisplayName>
 							<NodeIndex>3</NodeIndex>
 							<Component>
-								<ElapsedTime>31</ElapsedTime>
-								<StartTime>2019.10.23 17:30:30</StartTime>
-								<StopTime>2019.10.23 17:30:30</StopTime>
+								<ElapsedTime>16</ElapsedTime>
+								<StartTime>2019.10.23 15:52:47</StartTime>
+								<StopTime>2019.10.23 15:52:47</StopTime>
 								<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
-								<StoppedByUser>1</StoppedByUser>
-								<FileName>Export.txt</FileName>
+								<FileName>C:\Users\Max\Desktop\шарага\НАСБТ\Готовые лабы\1\Export.txt</FileName>
 								<DecimalSeparator>,</DecimalSeparator>
 								<DateFormat>dd.MM.yyyy</DateFormat>
 								<TimeFormat>h:mm</TimeFormat>
 								<ValueTrue>true</ValueTrue>
 								<ValueFalse>false</ValueFalse>
 								<FixedFormat>0</FixedFormat>
-								<Fields>
-									<Count>36</Count>
-									<L_0>COL1</L_0>
-									<L_1>COL2</L_1>
-									<L_2>COL3</L_2>
-									<L_3>COL4</L_3>
-									<L_4>COL5</L_4>
-									<L_5>COL6</L_5>
-									<L_6>COL7</L_6>
-									<L_7>COL8</L_7>
-									<L_8>COL9</L_8>
-									<L_9>COL10</L_9>
-									<L_10>COL11</L_10>
-									<L_11>COL12</L_11>
-									<L_12>COL13</L_12>
-									<L_13>COL14</L_13>
-									<L_14>COL15</L_14>
-									<L_15>COL16</L_15>
-									<L_16>COL17</L_16>
-									<L_17>COL18</L_17>
-									<L_18>COL19</L_18>
-									<L_19>COL20</L_19>
-									<L_20>COL21</L_20>
-									<L_21>COL22</L_21>
-									<L_22>COL23</L_22>
-									<L_23>COL24</L_23>
-									<L_24>COL25</L_24>
-									<L_25>COL26</L_25>
-									<L_26>COL27</L_26>
-									<L_27>COL28</L_27>
-									<L_28>COL29</L_28>
-									<L_29>COL30</L_29>
-									<L_30>COL31</L_30>
-									<L_31>COL32</L_31>
-									<L_32>COL33</L_32>
-									<L_33>COL34</L_33>
-									<L_34>COL35</L_34>
-									<L_35>COL36</L_35>
-								</Fields>
+								<Fields/>
 							</Component>
 							<Views>
 								<Count>1</Count>

@@ -35,12 +35,12 @@
 					<NodeIndex>2</NodeIndex>
 					<Component>
 						<Version>1</Version>
-						<ElapsedTime>31</ElapsedTime>
-						<StartTime>2019.10.18 16:55:43</StartTime>
-						<StopTime>2019.10.18 16:55:43</StopTime>
+						<ElapsedTime>47</ElapsedTime>
+						<StartTime>2019.10.23 17:33:21</StartTime>
+						<StopTime>2019.10.23 17:33:21</StopTime>
 						<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
 						<StoppedByUser>1</StoppedByUser>
-						<FileName>C:\Users\Max\Desktop\шарага\НАСБТ\deductor_labs\4\Credit.txt</FileName>
+						<FileName>Credit.txt</FileName>
 						<CharSet>chrANSI</CharSet>
 						<FixedFormat>0</FixedFormat>
 						<DecimalPoint>,</DecimalPoint>

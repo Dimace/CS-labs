@@ -14,25 +14,14 @@
 	</Version>
 	<Properties>
 		<Author>Max</Author>
-		<DisplayName>Kurylo_1_import_export</DisplayName>
+		<DisplayName>5lab</DisplayName>
 	</Properties>
 	<EnvironmentVariables>
 		<Version>1</Version>
-		<Vars>
-			<Count>2</Count>
-			<I_0>
-				<Name>LocaleID</Name>
-				<DataType>dtInteger</DataType>
-				<Value>1049</Value>
-			</I_0>
-			<I_1>
-				<Name>DisableFloatExceptions</Name>
-				<DataType>dtBoolean</DataType>
-			</I_1>
-		</Vars>
+		<Vars/>
 	</EnvironmentVariables>
 	<Script>
-		<NodeCount>3</NodeCount>
+		<NodeCount>5</NodeCount>
 		<Root>
 			<DisplayName>Сценарии</DisplayName>
 			<NodeIndex>1</NodeIndex>
@@ -42,13 +31,13 @@
 					<ID>1</ID>
 					<VendorName>TBGTextFileVendor</VendorName>
 					<Name>TextFile</Name>
-					<DisplayName>Импорт</DisplayName>
+					<DisplayName>Импорт данных</DisplayName>
 					<NodeIndex>2</NodeIndex>
 					<Component>
 						<Version>1</Version>
-						<ElapsedTime>15</ElapsedTime>
-						<StartTime>2019.10.23 17:29:36</StartTime>
-						<StopTime>2019.10.23 17:29:36</StopTime>
+						<ElapsedTime>32</ElapsedTime>
+						<StartTime>2019.10.23 17:34:00</StartTime>
+						<StopTime>2019.10.23 17:34:00</StopTime>
 						<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
 						<StoppedByUser>1</StoppedByUser>
 						<FileName>Credit.txt</FileName>
@@ -57,9 +46,9 @@
 						<DecimalPoint>,</DecimalPoint>
 						<DateFormat>dd.MM.yyyy</DateFormat>
 						<TimeFormat>h:mm</TimeFormat>
-						<ValueTrue>true</ValueTrue>
-						<ValueFalse>false</ValueFalse>
-						<ValueNull>?</ValueNull>
+						<ValueTrue>Да</ValueTrue>
+						<ValueFalse>Нет</ValueFalse>
+						<ValueNull>null</ValueNull>
 						<Columns>
 							<Count>36</Count>
 							<I_0>
@@ -140,7 +129,7 @@
 								<DisplayName>Частная собственность</DisplayName>
 								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtString</DataType>
+								<DataType>dtBoolean</DataType>
 							</I_9>
 							<I_10>
 								<ID>11</ID>
@@ -148,7 +137,7 @@
 								<DisplayName>Квартира</DisplayName>
 								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtString</DataType>
+								<DataType>dtBoolean</DataType>
 							</I_10>
 							<I_11>
 								<ID>12</ID>
@@ -196,7 +185,7 @@
 								<DisplayName>Загородный дом</DisplayName>
 								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtString</DataType>
+								<DataType>dtBoolean</DataType>
 							</I_16>
 							<I_17>
 								<ID>18</ID>
@@ -204,7 +193,7 @@
 								<DisplayName>Земельный участок</DisplayName>
 								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtString</DataType>
+								<DataType>dtBoolean</DataType>
 							</I_17>
 							<I_18>
 								<ID>19</ID>
@@ -212,7 +201,7 @@
 								<DisplayName>Прописка в данном районе</DisplayName>
 								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtString</DataType>
+								<DataType>dtBoolean</DataType>
 							</I_18>
 							<I_19>
 								<ID>20</ID>
@@ -220,7 +209,7 @@
 								<DisplayName>Гараж</DisplayName>
 								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtString</DataType>
+								<DataType>dtBoolean</DataType>
 							</I_19>
 							<I_20>
 								<ID>21</ID>
@@ -316,7 +305,7 @@
 								<DisplayName>Гражданское состояние</DisplayName>
 								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtString</DataType>
+								<DataType>dtBoolean</DataType>
 							</I_31>
 							<I_32>
 								<ID>33</ID>
@@ -324,7 +313,7 @@
 								<DisplayName>Занятость супруга</DisplayName>
 								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtString</DataType>
+								<DataType>dtBoolean</DataType>
 							</I_32>
 							<I_33>
 								<ID>34</ID>
@@ -340,7 +329,7 @@
 								<DisplayName>Давать кредит</DisplayName>
 								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtString</DataType>
+								<DataType>dtBoolean</DataType>
 							</I_34>
 							<I_35>
 								<ID>36</ID>
@@ -353,7 +342,7 @@
 						</Columns>
 					</Component>
 					<Views>
-						<Count>4</Count>
+						<Count>2</Count>
 						<I_0>
 							<ID>1</ID>
 							<Name>TBGBrowseVendor</Name>
@@ -421,7 +410,7 @@
 										<Name>COL8</Name>
 										<DataStatus>dsUsable</DataStatus>
 										<DataType>dtString</DataType>
-										<Width>40</Width>
+										<Width>24</Width>
 									</I_7>
 									<I_8>
 										<ID>9</ID>
@@ -434,15 +423,15 @@
 										<ID>10</ID>
 										<Name>COL10</Name>
 										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtString</DataType>
+										<DataType>dtBoolean</DataType>
 										<Width>168</Width>
 									</I_9>
 									<I_10>
 										<ID>11</ID>
 										<Name>COL11</Name>
 										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtString</DataType>
-										<Width>64</Width>
+										<DataType>dtBoolean</DataType>
+										<Width>80</Width>
 									</I_10>
 									<I_11>
 										<ID>12</ID>
@@ -485,29 +474,29 @@
 										<ID>17</ID>
 										<Name>COL17</Name>
 										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtString</DataType>
+										<DataType>dtBoolean</DataType>
 										<Width>112</Width>
 									</I_16>
 									<I_17>
 										<ID>18</ID>
 										<Name>COL18</Name>
 										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtString</DataType>
+										<DataType>dtBoolean</DataType>
 										<Width>136</Width>
 									</I_17>
 									<I_18>
 										<ID>19</ID>
 										<Name>COL19</Name>
 										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtString</DataType>
+										<DataType>dtBoolean</DataType>
 										<Width>192</Width>
 									</I_18>
 									<I_19>
 										<ID>20</ID>
 										<Name>COL20</Name>
 										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtString</DataType>
-										<Width>40</Width>
+										<DataType>dtBoolean</DataType>
+										<Width>80</Width>
 									</I_19>
 									<I_20>
 										<ID>21</ID>
@@ -596,14 +585,14 @@
 										<ID>32</ID>
 										<Name>COL32</Name>
 										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtString</DataType>
+										<DataType>dtBoolean</DataType>
 										<Width>168</Width>
 									</I_31>
 									<I_32>
 										<ID>33</ID>
 										<Name>COL33</Name>
 										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtString</DataType>
+										<DataType>dtBoolean</DataType>
 										<Width>136</Width>
 									</I_32>
 									<I_33>
@@ -618,7 +607,7 @@
 										<ID>35</ID>
 										<Name>COL35</Name>
 										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtString</DataType>
+										<DataType>dtBoolean</DataType>
 										<Width>104</Width>
 									</I_34>
 									<I_35>
@@ -634,19 +623,9 @@
 							<FilterColumns/>
 							<VirtualDataSet>
 								<SortComponent>
-									<StartTime>2019.10.23 17:29:40</StartTime>
-									<StopTime>2019.10.23 17:29:40</StopTime>
+									<StartTime>2019.10.18 20:10:33</StartTime>
+									<StopTime>2019.10.18 20:10:33</StopTime>
 									<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
-									<Count>1</Count>
-									<I_0>
-										<ID>1</ID>
-										<Name>COL1</Name>
-										<DisplayName>Сумма кредита</DisplayName>
-										<DataKind>dkContinuous</DataKind>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-										<SortOrder>soAsc</SortOrder>
-									</I_0>
 								</SortComponent>
 							</VirtualDataSet>
 							<Statistics>
@@ -720,13 +699,13 @@
 											<ID>10</ID>
 											<Name>COL10</Name>
 											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtString</DataType>
+											<DataType>dtBoolean</DataType>
 										</I_9>
 										<I_10>
 											<ID>11</ID>
 											<Name>COL11</Name>
 											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtString</DataType>
+											<DataType>dtBoolean</DataType>
 										</I_10>
 										<I_11>
 											<ID>12</ID>
@@ -762,25 +741,25 @@
 											<ID>17</ID>
 											<Name>COL17</Name>
 											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtString</DataType>
+											<DataType>dtBoolean</DataType>
 										</I_16>
 										<I_17>
 											<ID>18</ID>
 											<Name>COL18</Name>
 											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtString</DataType>
+											<DataType>dtBoolean</DataType>
 										</I_17>
 										<I_18>
 											<ID>19</ID>
 											<Name>COL19</Name>
 											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtString</DataType>
+											<DataType>dtBoolean</DataType>
 										</I_18>
 										<I_19>
 											<ID>20</ID>
 											<Name>COL20</Name>
 											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtString</DataType>
+											<DataType>dtBoolean</DataType>
 										</I_19>
 										<I_20>
 											<ID>21</ID>
@@ -852,13 +831,13 @@
 											<ID>32</ID>
 											<Name>COL32</Name>
 											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtString</DataType>
+											<DataType>dtBoolean</DataType>
 										</I_31>
 										<I_32>
 											<ID>33</ID>
 											<Name>COL33</Name>
 											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtString</DataType>
+											<DataType>dtBoolean</DataType>
 										</I_32>
 										<I_33>
 											<ID>34</ID>
@@ -870,7 +849,7 @@
 											<ID>35</ID>
 											<Name>COL35</Name>
 											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtString</DataType>
+											<DataType>dtBoolean</DataType>
 										</I_34>
 										<I_35>
 											<ID>36</ID>
@@ -884,249 +863,13 @@
 						</I_0>
 						<I_1>
 							<ID>2</ID>
-							<Name>TBGDataStatVendor</Name>
-							<VendorName>TBGDataStatVendor</VendorName>
-							<Histogram>1</Histogram>
-							<StatMin>1</StatMin>
-							<StatMax>1</StatMax>
-							<StatAvg>1</StatAvg>
-							<StatStdDev>1</StatStdDev>
-							<StatSum>1</StatSum>
-							<StatSumSq>1</StatSumSq>
-							<StatUnique>1</StatUnique>
-							<StatNull>1</StatNull>
-							<StatColumns>
-								<Columns>
-									<Count>36</Count>
-									<I_0>
-										<ID>1</ID>
-										<Name>COL1</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_0>
-									<I_1>
-										<ID>2</ID>
-										<Name>COL2</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_1>
-									<I_2>
-										<ID>3</ID>
-										<Name>COL3</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_2>
-									<I_3>
-										<ID>4</ID>
-										<Name>COL4</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtDateTime</DataType>
-									</I_3>
-									<I_4>
-										<ID>5</ID>
-										<Name>COL5</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_4>
-									<I_5>
-										<ID>6</ID>
-										<Name>COL6</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_5>
-									<I_6>
-										<ID>7</ID>
-										<Name>COL7</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_6>
-									<I_7>
-										<ID>8</ID>
-										<Name>COL8</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_7>
-									<I_8>
-										<ID>9</ID>
-										<Name>COL9</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_8>
-									<I_9>
-										<ID>10</ID>
-										<Name>COL10</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_9>
-									<I_10>
-										<ID>11</ID>
-										<Name>COL11</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_10>
-									<I_11>
-										<ID>12</ID>
-										<Name>COL12</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_11>
-									<I_12>
-										<ID>13</ID>
-										<Name>COL13</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_12>
-									<I_13>
-										<ID>14</ID>
-										<Name>COL14</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_13>
-									<I_14>
-										<ID>15</ID>
-										<Name>COL15</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_14>
-									<I_15>
-										<ID>16</ID>
-										<Name>COL16</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_15>
-									<I_16>
-										<ID>17</ID>
-										<Name>COL17</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_16>
-									<I_17>
-										<ID>18</ID>
-										<Name>COL18</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_17>
-									<I_18>
-										<ID>19</ID>
-										<Name>COL19</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_18>
-									<I_19>
-										<ID>20</ID>
-										<Name>COL20</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_19>
-									<I_20>
-										<ID>21</ID>
-										<Name>COL21</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_20>
-									<I_21>
-										<ID>22</ID>
-										<Name>COL22</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_21>
-									<I_22>
-										<ID>23</ID>
-										<Name>COL23</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_22>
-									<I_23>
-										<ID>24</ID>
-										<Name>COL24</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_23>
-									<I_24>
-										<ID>25</ID>
-										<Name>COL25</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_24>
-									<I_25>
-										<ID>26</ID>
-										<Name>COL26</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_25>
-									<I_26>
-										<ID>27</ID>
-										<Name>COL27</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_26>
-									<I_27>
-										<ID>28</ID>
-										<Name>COL28</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_27>
-									<I_28>
-										<ID>29</ID>
-										<Name>COL29</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_28>
-									<I_29>
-										<ID>30</ID>
-										<Name>COL30</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_29>
-									<I_30>
-										<ID>31</ID>
-										<Name>COL31</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_30>
-									<I_31>
-										<ID>32</ID>
-										<Name>COL32</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_31>
-									<I_32>
-										<ID>33</ID>
-										<Name>COL33</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_32>
-									<I_33>
-										<ID>34</ID>
-										<Name>COL34</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_33>
-									<I_34>
-										<ID>35</ID>
-										<Name>COL35</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtString</DataType>
-									</I_34>
-									<I_35>
-										<ID>36</ID>
-										<Name>COL36</Name>
-										<DataStatus>dsInfo</DataStatus>
-										<DataType>dtFloat</DataType>
-									</I_35>
-								</Columns>
-							</StatColumns>
-						</I_1>
-						<I_2>
-							<ID>3</ID>
 							<Name>TBGDiagramVendor</Name>
 							<VendorName>TBGDiagramVendor</VendorName>
 							<Axis>1</Axis>
 							<LegendAlignment>laRight</LegendAlignment>
-							<ChartType>ctPoints</ChartType>
+							<ChartType>ctLines</ChartType>
 							<LineWidth>2</LineWidth>
-							<XAxisLabelsFieldName>COL1</XAxisLabelsFieldName>
-							<XAxisValuesFieldName>COL1</XAxisValuesFieldName>
+							<XAxisLabelsFieldName>COL4</XAxisLabelsFieldName>
 							<DiagramColumns>
 								<Columns>
 									<Count>15</Count>
@@ -1237,289 +980,665 @@
 									</I_14>
 								</Columns>
 							</DiagramColumns>
-						</I_2>
-						<I_3>
-							<ID>4</ID>
-							<Name>TBGHistogramVendor</Name>
-							<VendorName>TBGHistogramVendor</VendorName>
-							<View3D>1</View3D>
-							<Axis>1</Axis>
-							<LegendAlignment>laRight</LegendAlignment>
-							<HistogramColumns>
-								<Columns>
-									<Count>15</Count>
-									<I_0>
-										<ID>1</ID>
-										<Name>COL1</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clRed</Color>
-										<Min>2000</Min>
-										<Max>69500</Max>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<HistogramInterval>8437.5</HistogramInterval>
-										<CustomMin>2000</CustomMin>
-										<CustomMax>69500</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram>
-											<Count>8</Count>
-											<Values>31;38;26;20;17;8;5;4</Values>
-										</Histogram>
-									</I_0>
-									<I_1>
-										<ID>2</ID>
-										<Name>COL2</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clLime</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>400</CustomMin>
-										<CustomMax>13900</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_1>
-									<I_2>
-										<ID>3</ID>
-										<Name>COL3</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clBlue</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>6</CustomMin>
-										<CustomMax>48</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_2>
-									<I_3>
-										<ID>4</ID>
-										<Name>COL6</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>8421631</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>1</CustomMin>
-										<CustomMax>1</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_3>
-									<I_4>
-										<ID>5</ID>
-										<Name>COL7</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>8446927</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>19</CustomMin>
-										<CustomMax>70</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_4>
-									<I_5>
-										<ID>6</ID>
-										<Name>COL12</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>16744576</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>12</CustomMin>
-										<CustomMax>70</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_5>
-									<I_6>
-										<ID>7</ID>
-										<Name>COL16</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>16744703</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>1</CustomMin>
-										<CustomMax>14</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_6>
-									<I_7>
-										<ID>8</ID>
-										<Name>COL22</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clGreen</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>2</CustomMin>
-										<CustomMax>45</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_7>
-									<I_8>
-										<ID>9</ID>
-										<Name>COL26</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>12615680</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>1</CustomMin>
-										<CustomMax>6</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_8>
-									<I_9>
-										<ID>10</ID>
-										<Name>COL27</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>33023</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>2</CustomMin>
-										<CustomMax>18</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_9>
-									<I_10>
-										<ID>11</ID>
-										<Name>COL28</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clOlive</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>3500</CustomMin>
-										<CustomMax>10500</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_10>
-									<I_11>
-										<ID>12</ID>
-										<Name>COL29</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clGray</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>500</CustomMin>
-										<CustomMax>4500</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_11>
-									<I_12>
-										<ID>13</ID>
-										<Name>COL31</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clYellow</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMax>3</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_12>
-									<I_13>
-										<ID>14</ID>
-										<Name>COL34</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>8421440</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMin>2</CustomMin>
-										<CustomMax>43</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_13>
-									<I_14>
-										<ID>15</ID>
-										<Name>COL36</Name>
-										<DataStatus>dsUnUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>8438015</Color>
-										<PresetHistogramCount>8</PresetHistogramCount>
-										<CustomMax>1</CustomMax>
-										<IsCustomInitMax>1</IsCustomInitMax>
-										<IsCustomInitMin>1</IsCustomInitMin>
-										<Histogram/>
-									</I_14>
-								</Columns>
-							</HistogramColumns>
-						</I_3>
+						</I_1>
 					</Views>
 					<SubNodes>
 						<Count>1</Count>
 						<I_0>
 							<ID>1</ID>
-							<VendorName>TBGExportASCIIVendor</VendorName>
-							<Name>ExportASCII</Name>
-							<DisplayName>Экспорт Text (C:\Users\Max\Desktop\шарага\НАСБТ\Готовые лабы\1\Export.txt)</DisplayName>
+							<VendorName>TBGReformDataSourceVendor</VendorName>
+							<Name>ReformDataSource</Name>
+							<DisplayName>Настройка набора данных (-Стоимость кредита, -Срок кредита, -Цель кредитования, -Количество, -Возраст, -Пол, -Образование, -Частная собственность, -Квартира, -Площадь квартиры, -Способ приобретения собств., -Расположение, -Машина, -Срок эксплуатации машины, -Загородный дом, -Земельный участок, -Прописка в данном районе, -Гараж, -Класс предприятия, -Время работы предприятия, -Отрасль предприятия, -Специализация, -Должность, -Срок работы на предприятии, -Срок работы по специальности, -Среднемес. доход, -Среднемес. расход, -Основное направление расходов, -Количество иждевенцев, -Гражданское состояние, -Занятость супруга, -Срок проживания в регионе, -Давать кредит, -Давать кредит(число))</DisplayName>
 							<NodeIndex>3</NodeIndex>
 							<Component>
-								<ElapsedTime>31</ElapsedTime>
-								<StartTime>2019.10.23 17:30:30</StartTime>
-								<StopTime>2019.10.23 17:30:30</StopTime>
-								<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
-								<StoppedByUser>1</StoppedByUser>
-								<FileName>Export.txt</FileName>
-								<DecimalSeparator>,</DecimalSeparator>
-								<DateFormat>dd.MM.yyyy</DateFormat>
-								<TimeFormat>h:mm</TimeFormat>
-								<ValueTrue>true</ValueTrue>
-								<ValueFalse>false</ValueFalse>
-								<FixedFormat>0</FixedFormat>
-								<Fields>
-									<Count>36</Count>
-									<L_0>COL1</L_0>
-									<L_1>COL2</L_1>
-									<L_2>COL3</L_2>
-									<L_3>COL4</L_3>
-									<L_4>COL5</L_4>
-									<L_5>COL6</L_5>
-									<L_6>COL7</L_6>
-									<L_7>COL8</L_7>
-									<L_8>COL9</L_8>
-									<L_9>COL10</L_9>
-									<L_10>COL11</L_10>
-									<L_11>COL12</L_11>
-									<L_12>COL13</L_12>
-									<L_13>COL14</L_13>
-									<L_14>COL15</L_14>
-									<L_15>COL16</L_15>
-									<L_16>COL17</L_16>
-									<L_17>COL18</L_17>
-									<L_18>COL19</L_18>
-									<L_19>COL20</L_19>
-									<L_20>COL21</L_20>
-									<L_21>COL22</L_21>
-									<L_22>COL23</L_22>
-									<L_23>COL24</L_23>
-									<L_24>COL25</L_24>
-									<L_25>COL26</L_25>
-									<L_26>COL27</L_26>
-									<L_27>COL28</L_27>
-									<L_28>COL29</L_28>
-									<L_29>COL30</L_29>
-									<L_30>COL31</L_30>
-									<L_31>COL32</L_31>
-									<L_32>COL33</L_32>
-									<L_33>COL34</L_33>
-									<L_34>COL35</L_34>
-									<L_35>COL36</L_35>
-								</Fields>
+								<Version>3</Version>
+								<TunedDataSource>
+									<Columns>
+										<Count>36</Count>
+										<I_0>
+											<ID>1</ID>
+											<Name>COL1</Name>
+											<DisplayName>Сумма кредита</DisplayName>
+											<DataStatus>dsInfo</DataStatus>
+											<DataType>dtFloat</DataType>
+										</I_0>
+										<I_1>
+											<ID>2</ID>
+											<Name>COL2</Name>
+											<DisplayName>Стоимость кредита</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_1>
+										<I_2>
+											<ID>3</ID>
+											<Name>COL3</Name>
+											<DisplayName>Срок кредита</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_2>
+										<I_3>
+											<ID>4</ID>
+											<Name>COL4</Name>
+											<DisplayName>Дата кредитования</DisplayName>
+											<DataStatus>dsInfo</DataStatus>
+											<DataType>dtDateTime</DataType>
+										</I_3>
+										<I_4>
+											<ID>5</ID>
+											<Name>COL5</Name>
+											<DisplayName>Цель кредитования</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_4>
+										<I_5>
+											<ID>6</ID>
+											<Name>COL6</Name>
+											<DisplayName>Количество</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_5>
+										<I_6>
+											<ID>7</ID>
+											<Name>COL7</Name>
+											<DisplayName>Возраст</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_6>
+										<I_7>
+											<ID>8</ID>
+											<Name>COL8</Name>
+											<DisplayName>Пол</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_7>
+										<I_8>
+											<ID>9</ID>
+											<Name>COL9</Name>
+											<DisplayName>Образование</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_8>
+										<I_9>
+											<ID>10</ID>
+											<Name>COL10</Name>
+											<DisplayName>Частная собственность</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtBoolean</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_9>
+										<I_10>
+											<ID>11</ID>
+											<Name>COL11</Name>
+											<DisplayName>Квартира</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtBoolean</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_10>
+										<I_11>
+											<ID>12</ID>
+											<Name>COL12</Name>
+											<DisplayName>Площадь квартиры</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_11>
+										<I_12>
+											<ID>13</ID>
+											<Name>COL13</Name>
+											<DisplayName>Способ приобретения собств.</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_12>
+										<I_13>
+											<ID>14</ID>
+											<Name>COL14</Name>
+											<DisplayName>Расположение</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_13>
+										<I_14>
+											<ID>15</ID>
+											<Name>COL15</Name>
+											<DisplayName>Машина</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_14>
+										<I_15>
+											<ID>16</ID>
+											<Name>COL16</Name>
+											<DisplayName>Срок эксплуатации машины</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_15>
+										<I_16>
+											<ID>17</ID>
+											<Name>COL17</Name>
+											<DisplayName>Загородный дом</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtBoolean</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_16>
+										<I_17>
+											<ID>18</ID>
+											<Name>COL18</Name>
+											<DisplayName>Земельный участок</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtBoolean</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_17>
+										<I_18>
+											<ID>19</ID>
+											<Name>COL19</Name>
+											<DisplayName>Прописка в данном районе</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtBoolean</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_18>
+										<I_19>
+											<ID>20</ID>
+											<Name>COL20</Name>
+											<DisplayName>Гараж</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtBoolean</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_19>
+										<I_20>
+											<ID>21</ID>
+											<Name>COL21</Name>
+											<DisplayName>Класс предприятия</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_20>
+										<I_21>
+											<ID>22</ID>
+											<Name>COL22</Name>
+											<DisplayName>Время работы предприятия</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_21>
+										<I_22>
+											<ID>23</ID>
+											<Name>COL23</Name>
+											<DisplayName>Отрасль предприятия</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_22>
+										<I_23>
+											<ID>24</ID>
+											<Name>COL24</Name>
+											<DisplayName>Специализация</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_23>
+										<I_24>
+											<ID>25</ID>
+											<Name>COL25</Name>
+											<DisplayName>Должность</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_24>
+										<I_25>
+											<ID>26</ID>
+											<Name>COL26</Name>
+											<DisplayName>Срок работы на предприятии</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_25>
+										<I_26>
+											<ID>27</ID>
+											<Name>COL27</Name>
+											<DisplayName>Срок работы по специальности</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_26>
+										<I_27>
+											<ID>28</ID>
+											<Name>COL28</Name>
+											<DisplayName>Среднемес. доход</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_27>
+										<I_28>
+											<ID>29</ID>
+											<Name>COL29</Name>
+											<DisplayName>Среднемес. расход</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_28>
+										<I_29>
+											<ID>30</ID>
+											<Name>COL30</Name>
+											<DisplayName>Основное направление расходов</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtString</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_29>
+										<I_30>
+											<ID>31</ID>
+											<Name>COL31</Name>
+											<DisplayName>Количество иждевенцев</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_30>
+										<I_31>
+											<ID>32</ID>
+											<Name>COL32</Name>
+											<DisplayName>Гражданское состояние</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtBoolean</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_31>
+										<I_32>
+											<ID>33</ID>
+											<Name>COL33</Name>
+											<DisplayName>Занятость супруга</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtBoolean</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_32>
+										<I_33>
+											<ID>34</ID>
+											<Name>COL34</Name>
+											<DisplayName>Срок проживания в регионе</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_33>
+										<I_34>
+											<ID>35</ID>
+											<Name>COL35</Name>
+											<DisplayName>Давать кредит</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtBoolean</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_34>
+										<I_35>
+											<ID>36</ID>
+											<Name>COL36</Name>
+											<DisplayName>Давать кредит(число)</DisplayName>
+											<DataStatus>dsUnUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<ChangedAttributes>[citDataStatus]</ChangedAttributes>
+										</I_35>
+									</Columns>
+								</TunedDataSource>
 							</Component>
 							<Views>
-								<Count>1</Count>
+								<Count>2</Count>
 								<I_0>
 									<ID>1</ID>
-									<Name>TBGDescriptionVendor</Name>
-									<VendorName>TBGDescriptionVendor</VendorName>
+									<Name>TBGBrowseVendor</Name>
+									<VendorName>TBGBrowseVendor</VendorName>
+									<BrowseColumns>
+										<Columns>
+											<Count>2</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>COL1</Name>
+												<DataStatus>dsUsable</DataStatus>
+												<DataType>dtFloat</DataType>
+												<Alignment>taRightJustify</Alignment>
+												<Width>104</Width>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>COL4</Name>
+												<DataStatus>dsUsable</DataStatus>
+												<DataType>dtDateTime</DataType>
+												<Alignment>taRightJustify</Alignment>
+												<Width>136</Width>
+											</I_1>
+										</Columns>
+									</BrowseColumns>
+									<FilterColumns/>
+									<VirtualDataSet>
+										<SortComponent>
+											<StartTime>2019.10.23 14:45:25</StartTime>
+											<StopTime>2019.10.23 14:45:25</StopTime>
+											<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+										</SortComponent>
+									</VirtualDataSet>
+									<Statistics>
+										<Histogram>1</Histogram>
+										<StatMin>1</StatMin>
+										<StatMax>1</StatMax>
+										<StatAvg>1</StatAvg>
+										<StatStdDev>1</StatStdDev>
+										<StatSum>1</StatSum>
+										<StatSumSq>1</StatSumSq>
+										<StatUnique>1</StatUnique>
+										<StatNull>1</StatNull>
+										<StatColumns>
+											<Columns>
+												<Count>2</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>COL1</Name>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_0>
+												<I_1>
+													<ID>2</ID>
+													<Name>COL4</Name>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtDateTime</DataType>
+												</I_1>
+											</Columns>
+										</StatColumns>
+									</Statistics>
 								</I_0>
+								<I_1>
+									<ID>2</ID>
+									<Name>TBGDiagramVendor</Name>
+									<VendorName>TBGDiagramVendor</VendorName>
+									<Axis>1</Axis>
+									<LegendAlignment>laRight</LegendAlignment>
+									<ChartType>ctBars</ChartType>
+									<LineWidth>2</LineWidth>
+									<XAxisLabelsFieldName>COL4</XAxisLabelsFieldName>
+									<XAxisValuesFieldName>COL4</XAxisValuesFieldName>
+									<DiagramColumns>
+										<Columns>
+											<Count>1</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>COL1</Name>
+												<DataStatus>dsUsable</DataStatus>
+												<DataType>dtFloat</DataType>
+												<Color>clRed</Color>
+											</I_0>
+										</Columns>
+									</DiagramColumns>
+								</I_1>
 							</Views>
+							<SubNodes>
+								<Count>2</Count>
+								<I_0>
+									<ID>2</ID>
+									<VendorName>TBGAutoCorrelationVendor</VendorName>
+									<Name>AutoCorrelation1</Name>
+									<DisplayName>Автокорреляция данных Сумма кредита</DisplayName>
+									<NodeIndex>6</NodeIndex>
+									<Component>
+										<Version>1</Version>
+										<TunedDataSource>
+											<Columns>
+												<Count>2</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>COL1</Name>
+													<DisplayName>Сумма кредита</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+													<MaxLag>14</MaxLag>
+												</I_0>
+												<I_1>
+													<ID>4</ID>
+													<Name>COL4</Name>
+													<DisplayName>Дата кредитования</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsUseless</DataStatus>
+													<DataType>dtDateTime</DataType>
+													<MaxLag>0</MaxLag>
+												</I_1>
+											</Columns>
+										</TunedDataSource>
+										<DerivedDataSource>
+											<UseLagColumn>1</UseLagColumn>
+											<LagColumnName>LAG</LagColumnName>
+										</DerivedDataSource>
+									</Component>
+									<Views>
+										<Count>2</Count>
+										<I_0>
+											<ID>1</ID>
+											<Name>TBGBrowseVendor</Name>
+											<VendorName>TBGBrowseVendor</VendorName>
+											<BrowseColumns>
+												<Columns>
+													<Count>2</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>LAG</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtInteger</DataType>
+														<Alignment>taRightJustify</Alignment>
+														<Width>80</Width>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL1</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Alignment>taRightJustify</Alignment>
+														<Width>146</Width>
+													</I_1>
+												</Columns>
+											</BrowseColumns>
+											<FilterColumns/>
+											<VirtualDataSet>
+												<SortComponent>
+													<StartTime>2019.10.23 14:51:28</StartTime>
+													<StopTime>2019.10.23 14:51:28</StopTime>
+													<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+												</SortComponent>
+											</VirtualDataSet>
+											<Statistics>
+												<Histogram>1</Histogram>
+												<StatMin>1</StatMin>
+												<StatMax>1</StatMax>
+												<StatAvg>1</StatAvg>
+												<StatStdDev>1</StatStdDev>
+												<StatSum>1</StatSum>
+												<StatSumSq>1</StatSumSq>
+												<StatUnique>1</StatUnique>
+												<StatNull>1</StatNull>
+												<StatColumns>
+													<Columns>
+														<Count>2</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>LAG</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtInteger</DataType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL1</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_1>
+													</Columns>
+												</StatColumns>
+											</Statistics>
+										</I_0>
+										<I_1>
+											<ID>2</ID>
+											<Name>TBGDiagramVendor</Name>
+											<VendorName>TBGDiagramVendor</VendorName>
+											<Axis>1</Axis>
+											<LegendAlignment>laRight</LegendAlignment>
+											<ChartType>ctLines</ChartType>
+											<LineWidth>2</LineWidth>
+											<XAxisLabelsFieldName>LAG</XAxisLabelsFieldName>
+											<XAxisValuesFieldName>LAG</XAxisValuesFieldName>
+											<DiagramColumns>
+												<Columns>
+													<Count>2</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>LAG</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtInteger</DataType>
+														<Color>clRed</Color>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL1</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clLime</Color>
+													</I_1>
+												</Columns>
+											</DiagramColumns>
+										</I_1>
+									</Views>
+								</I_0>
+								<I_1>
+									<ID>3</ID>
+									<VendorName>TBGAutoCorrelationVendor</VendorName>
+									<Name>AutoCorrelation2</Name>
+									<DisplayName>Автокорреляция данных Сумма кредита</DisplayName>
+									<NodeIndex>7</NodeIndex>
+									<Component>
+										<Version>1</Version>
+										<TunedDataSource>
+											<Columns>
+												<Count>2</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>COL1</Name>
+													<DisplayName>Сумма кредита</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+													<MaxLag>39</MaxLag>
+												</I_0>
+												<I_1>
+													<ID>4</ID>
+													<Name>COL4</Name>
+													<DisplayName>Дата кредитования</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsUseless</DataStatus>
+													<DataType>dtDateTime</DataType>
+													<MaxLag>0</MaxLag>
+												</I_1>
+											</Columns>
+										</TunedDataSource>
+										<DerivedDataSource>
+											<UseLagColumn>1</UseLagColumn>
+											<LagColumnName>LAG</LagColumnName>
+										</DerivedDataSource>
+									</Component>
+									<Views>
+										<Count>2</Count>
+										<I_0>
+											<ID>1</ID>
+											<Name>TBGBrowseVendor</Name>
+											<VendorName>TBGBrowseVendor</VendorName>
+											<BrowseColumns>
+												<Columns>
+													<Count>2</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>LAG</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtInteger</DataType>
+														<Alignment>taRightJustify</Alignment>
+														<Width>80</Width>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL1</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Alignment>taRightJustify</Alignment>
+														<Width>104</Width>
+													</I_1>
+												</Columns>
+											</BrowseColumns>
+											<FilterColumns/>
+											<VirtualDataSet>
+												<SortComponent>
+													<StartTime>2019.10.23 14:55:15</StartTime>
+													<StopTime>2019.10.23 14:55:15</StopTime>
+													<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+												</SortComponent>
+											</VirtualDataSet>
+											<Statistics>
+												<Histogram>1</Histogram>
+												<StatMin>1</StatMin>
+												<StatMax>1</StatMax>
+												<StatAvg>1</StatAvg>
+												<StatStdDev>1</StatStdDev>
+												<StatSum>1</StatSum>
+												<StatSumSq>1</StatSumSq>
+												<StatUnique>1</StatUnique>
+												<StatNull>1</StatNull>
+												<StatColumns>
+													<Columns>
+														<Count>2</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>LAG</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtInteger</DataType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL1</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_1>
+													</Columns>
+												</StatColumns>
+											</Statistics>
+										</I_0>
+										<I_1>
+											<ID>2</ID>
+											<Name>TBGDiagramVendor</Name>
+											<VendorName>TBGDiagramVendor</VendorName>
+											<Axis>1</Axis>
+											<LegendAlignment>laRight</LegendAlignment>
+											<ChartType>ctLines</ChartType>
+											<LineWidth>2</LineWidth>
+											<XAxisLabelsFieldName>LAG</XAxisLabelsFieldName>
+											<XAxisValuesFieldName>LAG</XAxisValuesFieldName>
+											<DiagramColumns>
+												<Columns>
+													<Count>2</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>LAG</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtInteger</DataType>
+														<Color>clRed</Color>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL1</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clLime</Color>
+													</I_1>
+												</Columns>
+											</DiagramColumns>
+										</I_1>
+									</Views>
+								</I_1>
+							</SubNodes>
 						</I_0>
 					</SubNodes>
 				</I_0>

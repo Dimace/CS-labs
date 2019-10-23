@@ -35,12 +35,12 @@
 					<NodeIndex>2</NodeIndex>
 					<Component>
 						<Version>1</Version>
-						<ElapsedTime>16</ElapsedTime>
-						<StartTime>2019.10.18 16:11:11</StartTime>
-						<StopTime>2019.10.18 16:11:11</StopTime>
+						<ElapsedTime>31</ElapsedTime>
+						<StartTime>2019.10.23 15:50:38</StartTime>
+						<StopTime>2019.10.23 15:50:38</StopTime>
 						<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
 						<StoppedByUser>1</StoppedByUser>
-						<FileName>C:\Users\Max\Desktop\шарага\НАСБТ\deductor_labs\2\Credit.txt</FileName>
+						<FileName>Credit.txt</FileName>
 						<CharSet>chrANSI</CharSet>
 						<FixedFormat>0</FixedFormat>
 						<DecimalPoint>,</DecimalPoint>
@@ -2893,12 +2893,12 @@
 					<NodeIndex>5</NodeIndex>
 					<Component>
 						<Version>1</Version>
-						<ElapsedTime>16</ElapsedTime>
-						<StartTime>2019.10.18 16:25:30</StartTime>
-						<StopTime>2019.10.18 16:25:30</StopTime>
+						<ElapsedTime>47</ElapsedTime>
+						<StartTime>2019.10.23 15:51:22</StartTime>
+						<StopTime>2019.10.23 15:51:22</StopTime>
 						<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
 						<StoppedByUser>1</StoppedByUser>
-						<FileName>C:\Users\Max\Desktop\шарага\НАСБТ\deductor_labs\2\Credit.txt</FileName>
+						<FileName>Credit.txt</FileName>
 						<CharSet>chrANSI</CharSet>
 						<FixedFormat>0</FixedFormat>
 						<DecimalPoint>,</DecimalPoint>
@@ -6694,12 +6694,12 @@
 					<NodeIndex>9</NodeIndex>
 					<Component>
 						<Version>1</Version>
-						<ElapsedTime>31</ElapsedTime>
-						<StartTime>2019.10.18 16:35:20</StartTime>
-						<StopTime>2019.10.18 16:35:20</StopTime>
+						<ElapsedTime>16</ElapsedTime>
+						<StartTime>2019.10.23 15:51:02</StartTime>
+						<StopTime>2019.10.23 15:51:02</StopTime>
 						<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
 						<StoppedByUser>1</StoppedByUser>
-						<FileName>C:\Users\Max\Desktop\шарага\НАСБТ\deductor_labs\2\sinus.txt</FileName>
+						<FileName>sinus.txt</FileName>
 						<CharSet>chrANSI</CharSet>
 						<FixedFormat>0</FixedFormat>
 						<DecimalPoint>,</DecimalPoint>

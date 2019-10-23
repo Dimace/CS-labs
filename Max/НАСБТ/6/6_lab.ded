@@ -31,16 +31,16 @@
 					<ID>2</ID>
 					<VendorName>TBGTextFileVendor</VendorName>
 					<Name>TextFile</Name>
-					<DisplayName>Текстовый файл (C:\Users\Max\Desktop\шарага\НАСБТ\deductor_labs\6\Credit.txt)</DisplayName>
+					<DisplayName>Импорт данных</DisplayName>
 					<NodeIndex>8</NodeIndex>
 					<Component>
 						<Version>1</Version>
-						<ElapsedTime>15</ElapsedTime>
-						<StartTime>2019.10.22 21:23:23</StartTime>
-						<StopTime>2019.10.22 21:23:23</StopTime>
+						<ElapsedTime>31</ElapsedTime>
+						<StartTime>2019.10.23 17:34:58</StartTime>
+						<StopTime>2019.10.23 17:34:58</StopTime>
 						<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
 						<StoppedByUser>1</StoppedByUser>
-						<FileName>C:\Users\Max\Desktop\шарага\НАСБТ\deductor_labs\6\Credit.txt</FileName>
+						<FileName>Credit.txt</FileName>
 						<CharSet>chrANSI</CharSet>
 						<FixedFormat>0</FixedFormat>
 						<DecimalPoint>,</DecimalPoint>
@@ -623,9 +623,8 @@
 							<FilterColumns/>
 							<VirtualDataSet>
 								<SortComponent>
-									<ElapsedTime>16</ElapsedTime>
-									<StartTime>2019.10.22 21:23:39</StartTime>
-									<StopTime>2019.10.22 21:23:39</StopTime>
+									<StartTime>2019.10.23 17:35:00</StartTime>
+									<StopTime>2019.10.23 17:35:00</StopTime>
 									<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
 									<Count>1</Count>
 									<I_0>

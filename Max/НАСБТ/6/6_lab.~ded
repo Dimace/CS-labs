@@ -4292,6 +4292,7 @@
 																									<ID>1</ID>
 																									<Name>TBGBrowseVendor</Name>
 																									<VendorName>TBGBrowseVendor</VendorName>
+																									<ExportMask>*.xls</ExportMask>
 																									<BrowseColumns>
 																										<Columns>
 																											<Count>7</Count>

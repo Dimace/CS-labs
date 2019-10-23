@@ -21,7 +21,7 @@
 		<Vars/>
 	</EnvironmentVariables>
 	<Script>
-		<NodeCount>9</NodeCount>
+		<NodeCount>10</NodeCount>
 		<Root>
 			<DisplayName>Сценарии</DisplayName>
 			<NodeIndex>1</NodeIndex>
@@ -6690,7 +6690,7 @@
 					<ID>3</ID>
 					<VendorName>TBGTextFileVendor</VendorName>
 					<Name>TextFile2</Name>
-					<DisplayName>Текстовый файл (C:\Users\Max\Desktop\шарага\НАСБТ\deductor_labs\2\sinus.txt)</DisplayName>
+					<DisplayName>Восстановление значений</DisplayName>
 					<NodeIndex>9</NodeIndex>
 					<Component>
 						<Version>1</Version>
@@ -6795,6 +6795,7 @@
 							<Name>TBGDiagramVendor</Name>
 							<VendorName>TBGDiagramVendor</VendorName>
 							<Axis>1</Axis>
+							<MarksStyle>smsLabelPercent</MarksStyle>
 							<LegendAlignment>laRight</LegendAlignment>
 							<ChartType>ctLines</ChartType>
 							<LineWidth>2</LineWidth>
@@ -6821,6 +6822,135 @@
 							</DiagramColumns>
 						</I_1>
 					</Views>
+					<SubNodes>
+						<Count>1</Count>
+						<I_0>
+							<ID>2</ID>
+							<VendorName>TBGPartPreProcessVendor</VendorName>
+							<Name>PartPreProcess4</Name>
+							<DisplayName>Восстановление</DisplayName>
+							<NodeIndex>11</NodeIndex>
+							<Component>
+								<PartTDS>
+									<Columns>
+										<Count>2</Count>
+										<I_0>
+											<ID>1</ID>
+											<Name>x</Name>
+											<DataKind>dkContinuous</DataKind>
+											<DataStatus>dsInfo</DataStatus>
+											<DataType>dtFloat</DataType>
+										</I_0>
+										<I_1>
+											<ID>2</ID>
+											<Name>y</Name>
+											<DataKind>dkContinuous</DataKind>
+											<DataStatus>dsUsable</DataStatus>
+											<DataType>dtFloat</DataType>
+											<NeedProcess>1</NeedProcess>
+											<MRG>rgApproximation</MRG>
+											<MSR>mdNoneSpectrumReform</MSR>
+										</I_1>
+									</Columns>
+								</PartTDS>
+							</Component>
+							<Views>
+								<Count>2</Count>
+								<I_0>
+									<ID>1</ID>
+									<Name>TBGBrowseVendor</Name>
+									<VendorName>TBGBrowseVendor</VendorName>
+									<BrowseColumns>
+										<Columns>
+											<Count>2</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>x</Name>
+												<DataStatus>dsUsable</DataStatus>
+												<DataType>dtFloat</DataType>
+												<Alignment>taRightJustify</Alignment>
+												<Width>80</Width>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>y</Name>
+												<DataStatus>dsUsable</DataStatus>
+												<DataType>dtFloat</DataType>
+												<Alignment>taRightJustify</Alignment>
+												<Width>80</Width>
+											</I_1>
+										</Columns>
+									</BrowseColumns>
+									<FilterColumns/>
+									<VirtualDataSet>
+										<SortComponent>
+											<StartTime>2019.10.18 16:40:13</StartTime>
+											<StopTime>2019.10.18 16:40:13</StopTime>
+											<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+										</SortComponent>
+									</VirtualDataSet>
+									<Statistics>
+										<Histogram>1</Histogram>
+										<StatMin>1</StatMin>
+										<StatMax>1</StatMax>
+										<StatAvg>1</StatAvg>
+										<StatStdDev>1</StatStdDev>
+										<StatSum>1</StatSum>
+										<StatSumSq>1</StatSumSq>
+										<StatUnique>1</StatUnique>
+										<StatNull>1</StatNull>
+										<StatColumns>
+											<Columns>
+												<Count>2</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>x</Name>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_0>
+												<I_1>
+													<ID>2</ID>
+													<Name>y</Name>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_1>
+											</Columns>
+										</StatColumns>
+									</Statistics>
+								</I_0>
+								<I_1>
+									<ID>2</ID>
+									<Name>TBGDiagramVendor</Name>
+									<VendorName>TBGDiagramVendor</VendorName>
+									<Axis>1</Axis>
+									<LegendAlignment>laRight</LegendAlignment>
+									<ChartType>ctLines</ChartType>
+									<LineWidth>2</LineWidth>
+									<XAxisLabelsFieldName>x</XAxisLabelsFieldName>
+									<XAxisValuesFieldName>x</XAxisValuesFieldName>
+									<DiagramColumns>
+										<Columns>
+											<Count>2</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>x</Name>
+												<DataStatus>dsUnUsable</DataStatus>
+												<DataType>dtFloat</DataType>
+												<Color>clRed</Color>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>y</Name>
+												<DataStatus>dsUsable</DataStatus>
+												<DataType>dtFloat</DataType>
+												<Color>clLime</Color>
+											</I_1>
+										</Columns>
+									</DiagramColumns>
+								</I_1>
+							</Views>
+						</I_0>
+					</SubNodes>
 				</I_2>
 			</SubNodes>
 		</Root>
